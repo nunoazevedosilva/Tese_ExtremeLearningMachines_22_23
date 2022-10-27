@@ -14,7 +14,7 @@ def integrate(F,t,y,tstop,dt):
     T.append(t)
     Y.append(y)
     while t<tstop:
-        print(str(t) +'//'+str(tstop),end='\r')
+        #print(str(t) +'//'+str(tstop),end='\r')
         dt=min(dt,tstop-t)
         y=y+runk4(F,t,y,dt)
         t=t+dt
